@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../css-exercises/css-exercises/grid/03-grid-layout-3"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Admin-Dashboard"
+	}
+}

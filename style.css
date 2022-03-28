@@ -1,0 +1,93 @@
+body {
+    margin:0;
+}
+
+li, ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
+    border: 5px black solid;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: aquamarine;
+    
+    grid-row:1/3;
+    
+    display: grid;
+    grid-auto-rows: min-content;
+    grid-template-columns: 1fr 5fr;
+    row-gap:50px;
+
+}
+
+.header {
+    background-color: aqua;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main-content {
+    background-color: bisque;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+}
+
+
+.sidebar ul,
+.sidebar nav {
+    border: 1px grey solid;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    font-size: 1.25rem;
+}
+
+.header section {
+    border: 1px black solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header section > div {
+    display: flex;
+}
+
+.main-content section {
+    border: 1px black solid;
+    display: grid;
+}
+.projects-container {
+    grid-row: 1/3;
+
+    box-sizing: border-box;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:25px;
+}
+
+.project-card {
+    background-color: white;
+}
+
+.announcement-container {
+    background-color: white;
+}
+
+.trending-container {
+    background-color: white;
+}
+
